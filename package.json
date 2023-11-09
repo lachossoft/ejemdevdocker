@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon dist/app.js"
+    "start": "nodemon dist/app.js",
+    "tscw": "tsc --watch",
+    "dev": "tsc --watch & nodemon dist/app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +15,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "express-validator": "^7.0.1"
+    "express-validator": "^7.0.1",
+    "mariadb": "^3.2.2",
+    "sequelize": "^6.33.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.16",
